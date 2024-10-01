@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice of Level 5</title>
+</head>
+<body bgcolor="pink">
+    <!-- 1. Create a page with all type of ordered list and one unordered list.
+    2. Create a table with headings,captions ad a few rows. One of heading should take at least 3 columns
+    3. Create a contact me from with relevant details for your resume website.
+    4. Use iFrame to add this video to your page.    -->
+    
+    
+
+
+    
+        <h1>Types of Lists</h1>
+        
+        <h2>Ordered List - Default (Numbers)</h2>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        
+        <h2>Ordered List - Alphabetical (Lowercase)</h2>
+        <ol type="a">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        
+        <h2>Ordered List - Alphabetical (Uppercase)</h2>
+        <ol type="A">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        
+        <h2>Ordered List - Roman Numerals (Lowercase)</h2>
+        <ol type="i">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        
+        <h2>Ordered List - Roman Numerals (Uppercase)</h2>
+        <ol type="I">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        
+        <h2>Unordered List</h2>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul><hr>
+    
+    
+        <h1>Table Example</h1>
+        
+        <table>
+            <caption>Monthly Sales Data</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Month</th>
+                    <th colspan="3">Sales Data</th>
+                </tr>
+                <tr>
+                    <th>Product A</th>
+                    <th>Product B</th>
+                    <th>Product C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$1000</td>
+                    <td>$1500</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$1100</td>
+                    <td>$1600</td>
+                    <td>$2100</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>$1200</td>
+                    <td>$1700</td>
+                    <td>$2200</td>
+                </tr>
+            </tbody>
+        </table><hr>
+
+
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #e9b7b7;
+                margin: 0;
+                padding: 20px;
+            }
+            .contact-form {
+                max-width: 600px;
+                margin: auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .contact-form h2 {
+                margin-top: 0;
+                color: #333;
+            }
+            .contact-form label {
+                display: block;
+                margin: 15px 0 5px;
+                font-weight: bold;
+            }
+            .contact-form input, 
+            .contact-form textarea, 
+            .contact-form button {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .contact-form button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .contact-form button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    
+    
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+<div class="video-container">
+    <h2>Watch this video</h2>
+    <iframe width="560" height="315" src="https://www.w3schools.com/"></iframe>
+</div>
+</body>
+</html>

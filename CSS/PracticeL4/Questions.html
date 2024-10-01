@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice of Level 4</title>
+    <style>
+.box{
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px dotted red;
+    width: 100px;
+    background-color: blue;
+}
+#first_button{
+ height: 70px;
+width: 70px; 
+    padding: 10px 15px 10px 15px;
+    margin:100px;
+    border: 2px dotted red;
+    border-radius: 35px;
+}
+
+    </style>
+</head>
+<body>
+     <!-- 1. create a div with height and width 200px and observe different values in the box model by inspecting.
+     2. create a button and give 10px padding to top and bottom and 15px on the sides
+     3. add 100px margin to the button on all sides.
+     4. add dotter border with color red and so much that the  button becomes a circle.
+     5. create two boxes with different box-sizing values observe changes in box model -->
+
+<div class="box" style="box-sizing: content-box;">Box1</div>
+<div class="box" style="box-sizing: border-box;">Box2</div>
+
+
+<button id="first_button">Click Me</button>
+
+    </body>
+</html>
